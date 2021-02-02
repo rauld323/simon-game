@@ -9,9 +9,11 @@ function nextSequence(){
 
 	$("#" + randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
 
-	$("sounds" + randomChosenColor + '.mp3')[0].play()
+	let playSound = new Audio("sounds/" + randomChosenColor + '.mp3')
+	playSound.play()
 }
-nextSequence()
+
+
 
 
 
